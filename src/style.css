@@ -1,0 +1,108 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.container{
+  max-width: 1300px;
+  width: 100%;
+  padding: 2rem;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.container > form{
+  width: 50%;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.container > form > input {
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid rgba(149,149,149,0.695);
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 5px 0px 0px 5px;
+}
+.container > form > button{
+  width: 20%;
+  padding: 1rem;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  /* background-color: rgb(35,129,184); */
+  background-color: rgb(4, 147, 230);
+  color: #242424;
+  font-size: large;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.todoContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #242424;
+  
+}
+
+.todo{
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(4, 147, 230);
+  padding: 1rem;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.todo > input{
+  width: 2rem;
+  height: 2rem;
+  flex: none;
+}
+
+.todo > p {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.todo > button{
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background-color: rgb(197, 25, 2);
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.todo > button:hover{
+  opacity: 0.8;
+}
+
+.textCut {
+  text-decoration: line-through;
+}
+
+
